@@ -4,7 +4,15 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        heading: ['Righteous', 'sans-serif']
+      },
+      fontWeight: {
+        '600': ['bold']
+      },
+    },
   },
   plugins: [],
 }

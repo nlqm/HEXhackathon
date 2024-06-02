@@ -18,12 +18,12 @@ import { SidebarItemSectionComponent } from './dashboard/sidebar/sidebar-item-se
 import { UxComponent } from './pages/ux/ux.component';
 import { ArComponent } from './pages/ar/ar.component';
 import { HomeComponent } from './pages/home/home.component';
-import { VideoComponent } from './pages/video/video.component';
+import { SubmissionComponent } from './pages/submission/submission.component';
 import { UpdateComponent } from './pages/update/update.component';
-import { PhotographyComponent } from './pages/photography/photography.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { IllustrationComponent } from './pages/illustration/illustration.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
-import { GraphicDesignComponent } from './pages/graphic-design/graphic-design.component';
+import { CourseComponent } from './pages/course/course.component';
 
 // icons
 import { ArIconComponent } from './dashboard/icons/ar-icon/ar-icon.component';
@@ -42,6 +42,7 @@ import { ContentComponent } from './components/content/content.component';
 import { SnippetComponent } from './components/docs/snippet/snippet.component';
 import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-icon.component';
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
+import { HomeContentComponent } from './components/home-content/home-content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,11 +61,11 @@ import { AngularIconComponent } from './components/docs/icons/angular-icon/angul
     UxComponent,
     ArComponent,
     HomeComponent,
-    VideoComponent,
+    SubmissionComponent,
     UpdateComponent,
-    PhotographyComponent,
+    DashboardComponent,
     IllustrationComponent,
-    GraphicDesignComponent,
+    CourseComponent,
     DocumentationComponent,
 
     // icons
@@ -84,6 +85,7 @@ import { AngularIconComponent } from './components/docs/icons/angular-icon/angul
     ContentComponent,
     FolderIconComponent,
     AngularIconComponent,
+    HomeContentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
