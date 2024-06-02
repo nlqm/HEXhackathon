@@ -6,7 +6,6 @@ This app is created for Hackathon 2024, with HEX problem statement.
 
 ## Creator
 Luu Quynh Mai Nguyen (Mai)
-[Mail](mailto:maiqnguyenluu41101@gmail.com)
 
 ## Technologies 
 This app used Angular, and Tailwindcss
