@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms'; // Add this import
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 // dashboard components
 import { LayoutComponent } from './dashboard/layout/layout.component';
 import { TopBarComponent } from './dashboard/top-bar/top-bar.component';
@@ -43,10 +42,14 @@ import { SnippetComponent } from './components/docs/snippet/snippet.component';
 import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-icon.component';
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
+import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
-
+    LoginComponent,
     // dashboard
     LayoutComponent,
     TopBarComponent,
@@ -87,7 +90,7 @@ import { HomeContentComponent } from './components/home-content/home-content.com
     AngularIconComponent,
     HomeContentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -10,9 +10,11 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { IllustrationComponent } from './pages/illustration/illustration.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
 import { CourseComponent } from './pages/course/course.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   { path: 'admin/ux', component: UxComponent },
   { path: 'admin/ar', component: ArComponent },
   { path: 'admin/submission', component: SubmissionComponent },
