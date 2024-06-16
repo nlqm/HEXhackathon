@@ -20,7 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SubmissionComponent } from './pages/submission/submission.component';
 import { UpdateComponent } from './pages/update/update.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { IllustrationComponent } from './pages/illustration/illustration.component';
+import { ChatComponent } from './pages/chat/chat.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
 import { CourseComponent } from './pages/course/course.component';
 
@@ -42,14 +42,12 @@ import { SnippetComponent } from './components/docs/snippet/snippet.component';
 import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-icon.component';
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
-import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     // dashboard
     LayoutComponent,
     TopBarComponent,
@@ -67,7 +65,7 @@ import { RouterModule } from '@angular/router';
     SubmissionComponent,
     UpdateComponent,
     DashboardComponent,
-    IllustrationComponent,
+    ChatComponent,
     CourseComponent,
     DocumentationComponent,
 

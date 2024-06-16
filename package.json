@@ -1,9 +1,7 @@
 {
-  "name": "salvia-kit-dashboard-v1-angular",
+  "name": "HEX hackathon",
   "version": "1.0.0",
-  "author": {
-    "name": "Enoch Ndika"
-  },
+  "author": "template from Enoch Ndika and Luu Quynh Mai Nguyen",
   "license": "MIT",
   "keywords": [
     "ui",
@@ -16,7 +14,8 @@
   ],
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "serve": "ng serve --open",
+    "start": "ts-node src/server.ts",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -30,15 +29,22 @@
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mssql": "^10.0.2",
+    "rxjs": "^7.8.1",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.1",
     "@angular/cli": "~16.1.1",
     "@angular/compiler-cli": "^16.1.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
     "@types/jasmine": "~4.3.0",
+    "@types/mssql": "^9.1.5",
+    "@types/node": "^20.14.2",
     "autoprefixer": "^10.4.14",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
@@ -49,6 +55,10 @@
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.3",
     "typescript": "~5.1.3"
-  }
+  },
+  "description": "This app use the Angular template: Salvia-kit Dashboard v1 Angular",
+  "main": "tailwind.config.js"
 }
